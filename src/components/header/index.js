@@ -7,7 +7,9 @@ import { Link } from "react-router-dom";
 import { useStateValue } from "../../context/StateProvider";
 
 const Header = () => {
-  const [{ basket }, dispatch] = useStateValue();
+  const [{ token, basket }, dispatch] = useStateValue();
+
+  const logout = () => dispatch({type: 'ADD_TOKEN', payload: null})
 
   return (
     <div className="header">
@@ -27,12 +29,20 @@ const Header = () => {
         </span>
       </div>
       <div className="header__actions">
-        <div className="action__item">
-          <span className="action__itemLineOne">Hello Guest</span>
-          <span className="action__itemLineOne">
-            <b>Sign in</b>
-          </span>
-        </div>
+        {token ? (
+          <button className="header__linkbtn" onClick={logout}>
+            Sign out
+          </button>
+        ) : (
+          <Link to="/login" className="header__link">
+            <div className="action__item">
+              <span className="action__itemLineOne">Hello Guest</span>
+              <span className="action__itemLineOne">
+                <b>Sign in</b>
+              </span>
+            </div>
+          </Link>
+        )}
         <div className="action__item">
           <span className="action__itemLineOne">Your</span>
           <span className="action__itemLineOne">Shop</span>
