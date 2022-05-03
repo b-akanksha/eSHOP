@@ -1,0 +1,54 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--gunmetal);
+    color: var(--antiFlashWhite);
+    padding: 4px;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    margin: 0 16px;
+}
+
+svg.header__logoImage {
+    fill: var(--vividGamboge);
+    width: 50px;
+    height: 50px;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 16px;
+}
+
+.header__searchInput {
+    width: 90%;
+    height: 2rem;
+}
+
+.header__searchButton {
+    padding: 8px;
+    height: 1.35rem;
+    background-color: var(--vividGamboge);
+}
+
+.header__actions {
+    display: flex;
+    flex-direction: row;
+}
+
+.action__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+svg.action__itemImage {
+    fill: var(--vividGamboge);
+}
