@@ -1,0 +1,41 @@
+.card {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    margin: 8px;
+    border-radius: 8px;
+    box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.75);
+    padding: 16px;
+}
+
+.card__image {
+    width: 250px;
+    height: 250px;
+}
+
+.card__price {
+    color: red;
+    font-weight: 800;
+}
+
+.card__priceStrike {
+    font-weight: 600;
+    color: #000;
+    text-decoration: line-through;
+}
+
+.card__discount {
+    font-weight: 500;
+    color: #000;
+}
+
+.card__cartbutton {
+    background-color: var(--vividGamboge);
+    color: #000;
+    border: 2px solid var(--vividGamboge);
+    padding: 8px;
+    border-radius: 25px;
+}
