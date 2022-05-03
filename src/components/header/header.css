@@ -57,3 +57,10 @@ svg.action__itemImage {
     text-decoration: none;
     color: var(--antiFlashWhite);
 }
+
+.header__linkbtn {
+    background-color: transparent;
+    border: transparent;
+    color: var(--antiFlashWhite);
+    cursor: pointer;
+}
