@@ -52,3 +52,8 @@ svg.header__logoImage {
 svg.action__itemImage {
     fill: var(--vividGamboge);
 }
+
+.header__link {
+    text-decoration: none;
+    color: var(--antiFlashWhite);
+}

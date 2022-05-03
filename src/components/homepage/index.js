@@ -11,6 +11,7 @@ const HomePage = () => {
       price: 799,
       originalPrice: 999,
       discount: 23,
+      rating: 1,
     },
     {
       img: "https://m.media-amazon.com/images/I/810KHyQ4WcL._AC_UL480_QL65_.jpg",
@@ -19,6 +20,7 @@ const HomePage = () => {
       price: 599,
       originalPrice: 699,
       discount: 10,
+      rating: 2,
     },
     {
       img: "https://m.media-amazon.com/images/I/71WC+Qz1KgL._AC_UL480_QL65_.jpg",
@@ -26,6 +28,7 @@ const HomePage = () => {
       price: 899,
       originalPrice: 999,
       discount: 10,
+      rating: 3,
     },
     {
       img: "https://m.media-amazon.com/images/I/71Iq9ug6OvL._SX679_.jpg",
@@ -34,6 +37,7 @@ const HomePage = () => {
       price: 799,
       originalPrice: 999,
       discount: 23,
+      rating: 4,
     },
     {
       img: "https://m.media-amazon.com/images/I/81T4O-rEI+L._AC_UL480_QL65_.jpg",
@@ -42,6 +46,7 @@ const HomePage = () => {
       price: 599,
       originalPrice: 699,
       discount: 10,
+      rating: 5,
     },
     {
       img: "https://m.media-amazon.com/images/I/71293gyogZL._AC_UL480_QL65_.jpg",
@@ -49,6 +54,7 @@ const HomePage = () => {
       price: 899,
       originalPrice: 999,
       discount: 10,
+      rating: 3,
     },
   ];
 
@@ -56,13 +62,11 @@ const HomePage = () => {
     <div className="home">
       {dummydata &&
         dummydata.length > 0 &&
-        dummydata.map((item) => (
+        dummydata.map((item, index) => (
           <Card
-            img={item.img}
-            title={item.title}
-            price={item.price}
-            originalPrice={item.originalPrice}
-            discount={item.discount}
+            key={`${item.title}-${index}`}
+            item={item}
+            type="add"
           />
         ))}
     </div>

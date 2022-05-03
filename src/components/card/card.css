@@ -38,4 +38,9 @@
     border: 2px solid var(--vividGamboge);
     padding: 8px;
     border-radius: 25px;
+    cursor: pointer;
+}
+
+.card__rating {
+    display: flex;
 }
