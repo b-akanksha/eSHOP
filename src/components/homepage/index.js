@@ -65,12 +65,8 @@ const HomePage = () => {
         dummydata.map((item, index) => (
           <Card
             key={`${item.title}-${index}`}
-            img={item.img}
-            title={item.title}
-            price={item.price}
-            originalPrice={item.originalPrice}
-            discount={item.discount}
-            rating={item.rating}
+            item={item}
+            type="add"
           />
         ))}
     </div>

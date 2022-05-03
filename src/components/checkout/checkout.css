@@ -1,5 +1,28 @@
 .checkout {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.checkout__info {
+    margin: 8px;
+    background-color: lightgray;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout__list {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    margin: 8px 16px;
+}
+
+.checkout__items {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
